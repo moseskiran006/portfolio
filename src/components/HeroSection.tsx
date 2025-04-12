@@ -30,7 +30,7 @@ const HeroSection = () => {
           className="mb-8"
         >
           <img
-            src="https://drive.google.com/file/d/1DqRUU4yYlrUsB_RoomJTLd0XZFZQdtcE/view?usp=sharing"
+            src="https://i.imgur.com/YQX4SwL.jpeg"
             alt="Kiran Kumar Pilli"
             className="w-48 h-48 rounded-full mx-auto border-4 border-[var(--neon-blue)] shadow-lg shadow-[var(--neon-blue)]/20"
           />
