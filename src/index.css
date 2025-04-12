@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --neon-blue: #00f3ff;
+    --neon-purple: #9d00ff;
+    --neon-green: #00ff9d;
+  }
+
+  body {
+    @apply bg-[#0a0a0a] text-white;
+    cursor: none;
+  }
+
+  ::selection {
+    background: var(--neon-blue);
+    color: black;
+  }
+}
+
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  background: var(--neon-blue);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: screen;
+  transition: transform 0.2s ease;
+}
+
+.custom-cursor.hover {
+  transform: scale(1.5);
+  background: var(--neon-purple);
+}
+
+.glass-card {
+  @apply backdrop-blur-lg bg-white/10 rounded-xl border border-white/20;
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.1);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.glass-card:hover {
+  box-shadow: 0 0 30px rgba(0, 243, 255, 0.2);
+  border-color: var(--neon-blue);
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent;
+  background-image: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+}
+
+.text-glow {
+  text-shadow: 0 0 10px var(--neon-blue);
+}
+
+.section-heading {
+  @apply text-4xl font-bold mb-8 text-gradient;
+  text-shadow: 0 0 20px var(--neon-blue);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px var(--neon-blue);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--neon-blue), 0 0 30px var(--neon-purple);
+  }
+  100% {
+    box-shadow: 0 0 5px var(--neon-blue);
+  }
+}
+
+.glow-effect {
+  animation: glow 3s ease-in-out infinite;
+}
