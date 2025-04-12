@@ -60,7 +60,7 @@ const ExperienceSection = () => {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-[var(--neon-blue)] to-[var(--neon-purple)] rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000" />
               <div className="relative">
-                <h3 className="text-xl font-bold text-[var(--neon-blue)]">AM Global Research & Technologies</h3>
+                <h3 className="text-xl font-bold text-[var(--neon-blue)]">AM Global Research & Technologies (Computer Vision Intern)</h3>
                 <p className="text-[var(--neon-purple)]">June-December 2024</p>
                 <ul className="list-disc list-inside mt-4 space-y-2">
                   <li className="text-[var(--neon-green)]">YOLOv9 + EasyOCR number plate detection</li>
@@ -76,7 +76,7 @@ const ExperienceSection = () => {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-[var(--neon-blue)] to-[var(--neon-purple)] rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000" />
               <div className="relative">
-                <h3 className="text-xl font-bold text-[var(--neon-blue)]">Acmegrade</h3>
+                <h3 className="text-xl font-bold text-[var(--neon-blue)]">Acmegrade (Machine Learning Intern)</h3>
                 <p className="text-[var(--neon-purple)]">June–September 2023</p>
                 <ul className="list-disc list-inside mt-4 space-y-2">
                   <li className="text-[var(--neon-green)]">Built RAG systems with LangChain</li>
